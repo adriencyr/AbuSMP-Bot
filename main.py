@@ -1,6 +1,7 @@
 import time, disnake, json, os
 from urllib.request import urlopen
 from disnake.ext import commands, tasks
+from keep_alive import keep_alive
 
 time.sleep(5.9)
 
@@ -82,4 +83,5 @@ async def unloadCog(inter: disnake.ApplicationCommandInteraction, cog: str):
 
 #activity = disnake.Game(name='AbuSMP | ' + str(status_json["players"]["online"]) + ' online', type=3)
 
+keep_alive()
 bot.run(os.getenv('token'))
