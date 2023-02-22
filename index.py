@@ -87,4 +87,4 @@ async def unloadCog(inter: disnake.ApplicationCommandInteraction, cog: str):
 #activity = disnake.Game(name='AbuSMP | ' + str(status_json["players"]["online"]) + ' online', type=3)    
 
 
-bot.run('MTA3NTE1MTk3MzY1OTE5MzM2NQ.G7swDd.CErzUab6_5_-J1AeondtvEdrOyyTFXdb33Hub0')
+bot.run('')
