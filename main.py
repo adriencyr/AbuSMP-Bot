@@ -19,7 +19,12 @@ bot = commands.InteractionBot(
 async def on_ready():
   print(f'BOT: Logged in as {bot.user}')
 
-
+@bot.event
+async def on_member_join(member):
+  join_channel = bot.get_channel(1075851470890614784)
+  await join_channel.send(f'<@!{member.id}> :wave: Welcome to the AbuSMP discord! Please check the <#1076130007245668352> channel to get started. We hope you have a great experience!')
+  
+  
 if __name__ in '__main__':
   path = f"cogs"
   folder = f"cogs"
